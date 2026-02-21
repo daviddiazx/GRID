@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+ 
+}
+ 
+.Container {
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: 90px 1fr 90px;
+    grid-template-areas: 
+        "header header header"
+        "siderbarL1 content siderbarR1"
+        "footer footer footer"
+    ;
+    gap: 5px;
+    padding: 5px;
+    height: 100vh;
+ 
+ 
+}
+ 
+.item {
+    background-color: siliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiver;
+    border: 2px solid black;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.header{
+    grid-area: header;
+}
+
+.siderbarL1{
+    grid-area: siderbarL1;
+}
+
+.content{
+    grid-area: content;
+}
+
+.siderbarR1{
+    grid-area: siderbarR1;
+}
+
+.footer{
+    grid-area: footer;
+}

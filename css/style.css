@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, rgb(255, 112, 245),rgb(93, 93, 255),skyblue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.Layouts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+    
+    border-radius: 40px;
+    padding: 100px;
+}
+
+.item {
+     display: inline-block;
+    border-radius: 40px;
+    padding: 20px 40px;
+   background-color: rgb(9, 22, 68, 0.4);
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+     transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+a:active {
+    transform: scale(0.95);
+}
+
+a:hover {
+    background: rgb(15, 42, 143);
+    color: #ffffff;
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 0 20px rgb(15, 42, 143),
+                0 0 40px rgb(15, 42, 143),
+                0 0 60px rgb(15, 42, 143);
+    border: 2px solid white;
+    cursor: pointer;
+
+}

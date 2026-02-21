@@ -1,0 +1,33 @@
+*{box-sizing: border-box;}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 90px ;
+    grid-template-rows: 50px 1fr 50px;
+    height: 100vh;
+    gap: 1vh;
+
+}
+
+.item {
+    background-color: silver;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    grid-column: 1/10;
+}
+
+.content {
+    grid-column: 1/10;
+    grid-row: 2/4;
+}
+
+.footer{
+    grid-column: 1/10;
+}
